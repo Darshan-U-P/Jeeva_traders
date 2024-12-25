@@ -1,0 +1,110 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Home Page Styles */
+.home-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* No padding to ensure footer adjustment */
+  padding-bottom: 60px; /* Adjust based on the height of your footer */
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+  padding-top: 80px; /* Adjust based on the height of your Navbar */
+  text-align: center;
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 50px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 800px; /* Restrict width on larger screens */
+  flex: 1; /* Ensures it takes up remaining space */
+  position: relative; /* Ensure proper positioning */
+  top: 100px; /* Offset to prevent overlap with fixed Navbar */
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Responsive Design for Home Page */
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+    top: 60px; /* Adjust offset for smaller screens */
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .welcome-section p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+}
+
+/* Tablet Layout */
+@media (max-width: 1024px) {
+  .welcome-section {
+    padding: 40px 20px; /* Slightly increase padding */
+    top: 65px; /* Adjust offset for tablet screens */
+  }
+
+  .welcome-section h1 {
+    font-size: 2.2rem; /* Adjust heading size */
+  }
+
+  .welcome-section p {
+    font-size: 1.1rem; /* Adjust paragraph size */
+  }
+}
+
+/* Desktop Layout */
+@media (min-width: 1025px) {
+  .welcome-section {
+    max-width: 1000px;
+    margin: 50px auto; /* Center on larger screens */
+    padding: 80px 40px; /* Add spacious padding */
+    top: 70px; /* Maintain offset for desktop screens */
+  }
+
+  .welcome-section h1 {
+    font-size: 3rem; /* Larger heading for desktop */
+  }
+
+  .welcome-section p {
+    font-size: 1.5rem; /* Larger text for desktop */
+  }
+}

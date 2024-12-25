@@ -1,0 +1,153 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+.home-header {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+/* Logo Styling */
+.home-header .logo {
+  width: 75px;
+  height: auto;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Fade-in transition */
+}
+
+.navbar.active {
+  display: flex; /* Ensure it is displayed as flex when active */
+  opacity: 1; /* Fade-in effect */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, background-image 0.5s ease;
+}
+
+.navbar ul li a:hover {
+  background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Menu Button Styling */
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 100; /* Ensure it stays above the navbar */
+  display: none; /* Initially hidden */
+}
+
+/* Mobile Layout (max-width 768px) */
+@media (max-width: 768px) {
+  .home-header {
+    flex-direction: row; /* Ensure logo and menu button align horizontally */
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column; /* Vertical layout for mobile */
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust based on the height of your header */
+    left: 0;
+    background-color: #333; /* Background color to match the header */
+    z-index: 1000;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Fade-in transition */
+  }
+
+  .navbar.active {
+    display: flex; /* Show navbar when active */
+    opacity: 1; /* Fade-in effect */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li a {
+    display: block;
+    padding: 15px;
+  }
+
+  .menu-button {
+    display: block; /* Show the menu button */
+  }
+}
+
+/* Desktop Layout (min-width 769px) */
+@media (min-width: 769px) {
+  .home-header {
+    justify-content: space-between;
+  }
+
+  .navbar {
+    display: flex; /* Display navbar horizontally on desktop */
+    opacity: 1; /* Ensure it's fully visible */
+    transition: none; /* No transition on desktop */
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .navbar ul li a {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+  }
+
+  .menu-button {
+    display: none; /* Hide the hamburger button on desktop */
+  }
+}

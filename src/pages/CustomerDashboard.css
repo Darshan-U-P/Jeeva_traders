@@ -1,0 +1,103 @@
+/* src/pages/CustomerDashboard.css */
+.dashboard-page {
+    background-color: white;
+    min-height: 100vh;
+  }
+  
+  /* Apply styles to the entire body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    /* Add other body-level styles if necessary */
+  }
+  
+  /* Modify the dashboard-container to handle only the content area */
+  .dashboard-container {
+    padding: 100px 100px;
+    max-width: 1600px;
+    max-height: 800dpx;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 150px; /* Adjust this to suit your layout */
+  }
+  
+  /* Other styles like .dashboard-header, .dashboard-body, etc. should remain the same */
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .dashboard-header .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dashboard-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .dashboard-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .dashboard-section p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .dashboard-section{
+
+    padding: 50px 50px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgb(0, 0, 0.6);
+    border-radius: 8px;
+    
+   
+  }
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .order-table th, .order-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .order-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
