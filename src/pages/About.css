@@ -1,0 +1,117 @@
+/* About Page Styling */
+.about-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* About Section Styling */
+.about-section {
+  padding-top: 70px; /* Adjust based on the height of your Navbar */
+  background-color: #ffffff;
+  padding: 50px 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  max-width: 900px;
+  flex: 1; /* To ensure it takes up remaining space */
+  position: relative; /* Ensure proper positioning */
+  top: 100px;
+}
+
+/* Header and Paragraph Styling */
+.about-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 40px;
+}
+
+/* Form and Input Styling */
+.contact-form, .form-input, .textarea {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label, .form-input label, .textarea label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input, .form-input input, .textarea input,
+.contact-form textarea, .form-input textarea, .textarea textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea, .form-input textarea, .textarea textarea {
+  resize: none;
+  height: 150px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .about-section {
+    max-width: 900px;
+    margin: 50px auto;
+  }
+
+  .about-section h1 {
+    font-size: 3rem;
+  }
+}

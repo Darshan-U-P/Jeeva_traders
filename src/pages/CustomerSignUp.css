@@ -1,0 +1,67 @@
+/* src/pages/CustomerSignUp.css */
+.signup-page {
+  background-color: black;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-box {
+  color: white;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signup-form button:disabled {
+  background-color: #ccc;
+}
+
+.login-redirect {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-redirect a {
+  color: #28a745;
+  text-decoration: none;
+}
